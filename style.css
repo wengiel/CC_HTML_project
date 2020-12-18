@@ -1,0 +1,260 @@
+body {
+    background-color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+.grid {
+    width: 1440px;
+    display: grid;
+    grid-template-columns: 1440px;
+    grid-template-rows: 85px 585px 220px 430px 430px 759px 785px;
+    border: 2px red solid;
+}
+
+.for-nav {
+    grid-row: 1/1;
+    height: 85px;
+    background-color: #FFFFFF;
+    border: 2px blue solid;
+}
+
+nav {
+    position: fixed;
+    width: 1293px;
+    height: 35.95px;
+    left: 98px;
+    top: 48px;
+    text-align: end;
+    background-color: #FFFFFF;
+}
+
+header {
+    grid-row: 2/2;
+    width:1440px;
+    height: 585px;
+    background-image: url(./website_pictures/header-pic.PNG);
+    background-size: cover;
+    border: 2px blue solid;
+
+}
+
+h1 {
+    text-align: center;
+    color: #FFC53D;
+}
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+.gridbox.happy-to-help {
+    grid-row: 3/3;
+}
+
+.gridbox.about-me {
+    grid-row: 4/4;
+    border: 2px blue solid;
+}
+
+.floating.box {
+    width: 1241px;
+    height: 280px;
+    background-color: #FFFFFF;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.gridbox.about-me > .floating-box {
+    position: absolute;
+    width: 1241px;
+    height: 280px;
+    left: 100px;
+    top: 974px;
+    background-color: #FFFFFF;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.gridbox.skills > .floating-box {
+    position: absolute;
+    width: 1239px;
+    height: 280px;
+    left: 100px;
+    top: 1461px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+.gridbox.skills {
+    grid-row: 5/5;
+    width: 1440px;
+    border: 2px blue solid;
+}
+
+.greybox {
+    position: absolute;
+    width: 980px;
+    height: 400px;
+    background-color: #FAFAFF;
+    z-index: -1;
+}
+
+.gridbox.portfolio {
+    grid-row: 6/6;
+    border: 2px blue solid;
+}
+
+.gridbox.contact {
+    grid-row: 7/7;
+    background-color: #FAFAFF;
+    border: 2px blue solid;
+    
+}
+
+.white-contact-box {
+    position: absolute;
+    display: inline-block;
+    left: 100px;
+    top: 2625px;
+    width: 1241px;
+    height: 621px;
+    background-color: #FFFFFF;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.orange-box {
+    position: absolute;
+    display: inline-block;
+    width:509px;
+    height: 621px;
+    background-color: #FF9A3D;
+    
+}
+
+.gridbox.contact > p {
+    position: absolute;
+    left: 152px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+
+}
+
+footer {
+    width: 1440px;
+    background-color: #FFFFFF;
+}
+
+footer > p {
+    text-align: center;
+}
+
+
+/* poniżej elementy nieblokowe strony*/
+
+
+.buttons {
+    color: #FFFFFF;
+    background-color: #FFC53D;
+    background-image: linear-gradient(90deg ,#FF9A3D, #FFC53D);    
+    border-color: transparent;
+    border-radius: 15px;
+    width: 200px;
+    height: 50px;
+    padding: 15px 35px;
+    margin: 0px 0px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    mix-blend-mode: normal;
+}
+.buttons.small {
+    width: 100px;
+}
+.buttons:hover{
+    color: #FFC53D;
+    background: #FFFFFF;
+    border-color:  #FFC53D;
+}
+
+.inputform {
+    color: #A0A0A0;
+    background-color: #FAFAFF;    
+    width: 639px;
+    height: 56px;
+    border-color: #FAFAFF;
+    border-radius: 20px;
+    
+}
+.inputform.textarea {
+    height: 180px;
+}
+.inputform:focus {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+}
+
+
+
+/* css z figmy*/
+
+/* I am happy to help you with any problem! */
+
+position: absolute;
+width: 714px;
+height: 43px;
+left: 363px;
+top: 718px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #222222;
+
+/* Rectangle 7 */
+
+position: absolute;
+width: 1241px;
+height: 280px;
+left: 100px;
+top: 974px;
+
+background: #FFFFFF;
+box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+
+
+/* Rectangle 7 */
+
+position: absolute;
+width: 1241px;
+height: 621px;
+left: 100px;
+top: 2765px;
+
+background: #FFFFFF;
+box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+
+
+/* Rectangle 7.1 */
+
+position: absolute;
+width: 1239px;
+height: 280px;
+left: 100px;
+top: 1461px;
+
+background: #FFFFFF;
+box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
