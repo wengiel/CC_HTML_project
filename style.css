@@ -5,10 +5,12 @@ body {
 
 .grid {
     width: 1440px;
+    position: absolute;
     display: grid;
     grid-template-columns: 1440px;
-    grid-template-rows: 85px 585px 220px 430px 430px 759px 785px;
+    grid-template-rows: 85px 585px 220px 430px 430px 759px 785px 85px;
     border: 2px red solid;
+    
 }
 
 .for-nav {
@@ -53,6 +55,16 @@ h3 {
 
 .gridbox.happy-to-help {
     grid-row: 3/3;
+}
+
+#button1 {
+    position: relative;
+    left: 33%;
+}
+
+#button2 {
+    position: relative;
+    left: 33%;
 }
 
 .gridbox.about-me {
@@ -115,10 +127,10 @@ h3 {
 }
 
 .white-contact-box {
-    position: absolute;
+    position: relative;
     display: inline-block;
     left: 100px;
-    top: 2625px;
+    top: 10%;
     width: 1241px;
     height: 621px;
     background-color: #FFFFFF;
@@ -149,6 +161,7 @@ h3 {
 footer {
     width: 1440px;
     background-color: #FFFFFF;
+    grid-row: 8/8;
 }
 
 footer > p {
