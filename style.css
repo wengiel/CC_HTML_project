@@ -1,22 +1,21 @@
 body {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     font-family: 'Raleway', sans-serif;
 }
 
 .grid {
     width: 1440px;
-    position: absolute;
+    /* position: absolute; */
     display: grid;
     grid-template-columns: 1440px;
     grid-template-rows: 85px 585px 220px 430px 430px 759px 785px 85px;
     border: 2px red solid;
-    
 }
 
 .for-nav {
     grid-row: 1/1;
     height: 85px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border: 2px blue solid;
 }
 
@@ -27,22 +26,21 @@ nav {
     left: 98px;
     top: 48px;
     text-align: end;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
 header {
     grid-row: 2/2;
-    width:1440px;
+    /* width: 1440px; */
     height: 585px;
     background-image: url(./website_pictures/header-pic.PNG);
     background-size: cover;
     border: 2px blue solid;
-
 }
 
 h1 {
     text-align: center;
-    color: #FFC53D;
+    color: #ffc53d;
 }
 h2 {
     text-align: center;
@@ -51,7 +49,6 @@ h2 {
 h3 {
     text-align: center;
 }
-
 
 .gridbox.happy-to-help {
     grid-row: 3/3;
@@ -75,7 +72,7 @@ h3 {
 .floating.box {
     width: 1241px;
     height: 280px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -85,7 +82,7 @@ h3 {
     height: 280px;
     left: 100px;
     top: 974px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -95,14 +92,13 @@ h3 {
     height: 280px;
     left: 100px;
     top: 1461px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
 }
 
-
 .gridbox.skills {
     grid-row: 5/5;
-    width: 1440px;
+    /* width: 1440px; */
     border: 2px blue solid;
 }
 
@@ -110,7 +106,7 @@ h3 {
     position: absolute;
     width: 980px;
     height: 400px;
-    background-color: #FAFAFF;
+    background-color: #fafaff;
     z-index: -1;
 }
 
@@ -121,33 +117,31 @@ h3 {
 
 .gridbox.contact {
     grid-row: 7/7;
-    background-color: #FAFAFF;
+    background-color: #fafaff;
     border: 2px blue solid;
-    
 }
 
 .white-contact-box {
-    position: relative;
-    display: inline-block;
-    left: 100px;
-    top: 10%;
+    /* position: relative; */
+    /* display: inline-block; */
+    /* left: 100px; */
+    /* top: 10%; */
     width: 1241px;
     height: 621px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
 }
 
 .orange-box {
     position: absolute;
     display: inline-block;
-    width:509px;
+    width: 509px;
     height: 621px;
-    background-color: #FF9A3D;
-    
+    background-color: #ff9a3d;
 }
 
 .gridbox.contact > p {
-    position: absolute;
+    /* position: absolute; */
     left: 152px;
     font-family: Ubuntu;
     font-style: normal;
@@ -155,12 +149,11 @@ h3 {
     font-size: 32px;
     line-height: 37px;
     letter-spacing: 0.02em;
-
 }
 
 footer {
     width: 1440px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     grid-row: 8/8;
 }
 
@@ -168,14 +161,12 @@ footer > p {
     text-align: center;
 }
 
-
 /* poniżej elementy nieblokowe strony*/
 
-
 .buttons {
-    color: #FFFFFF;
-    background-color: #FFC53D;
-    background-image: linear-gradient(90deg ,#FF9A3D, #FFC53D);    
+    color: #ffffff;
+    background-color: #ffc53d;
+    background-image: linear-gradient(90deg, #ff9a3d, #ffc53d);
     border-color: transparent;
     border-radius: 15px;
     width: 200px;
@@ -191,30 +182,60 @@ footer > p {
 .buttons.small {
     width: 100px;
 }
-.buttons:hover{
-    color: #FFC53D;
-    background: #FFFFFF;
-    border-color:  #FFC53D;
+.buttons:hover {
+    color: #ffc53d;
+    background: #ffffff;
+    border-color: #ffc53d;
 }
 
 .inputform {
-    color: #A0A0A0;
-    background-color: #FAFAFF;    
+    color: #a0a0a0;
+    background-color: #fafaff;
     width: 639px;
     height: 56px;
-    border-color: #FAFAFF;
+    border-color: #fafaff;
     border-radius: 20px;
-    
 }
 .inputform.textarea {
     height: 180px;
 }
 .inputform:focus {
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
-
 }
 
+.container {
+    display: block;
+    width: 1440px;
+    margin: 0 auto;
+}
 
+.contact-alternative {
+    background-color: #fafaff;
+    border: 2px blue solid;
+}
+
+.contact-alternative-header > p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+}
+
+.contact-alternative-content {
+    display: flex;
+    justify-content: center;
+    height: 750px;
+    align-items: center;
+}
+
+.contact-alternative-contact-box {
+    width: 1241px;
+    height: 621px;
+    background-color: #ffffff;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
 
 /* css z figmy*/
 
@@ -245,9 +266,8 @@ height: 280px;
 left: 100px;
 top: 974px;
 
-background: #FFFFFF;
+background: #ffffff;
 box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
-
 
 /* Rectangle 7 */
 
@@ -257,9 +277,8 @@ height: 621px;
 left: 100px;
 top: 2765px;
 
-background: #FFFFFF;
+background: #ffffff;
 box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
-
 
 /* Rectangle 7.1 */
 
@@ -269,5 +288,5 @@ height: 280px;
 left: 100px;
 top: 1461px;
 
-background: #FFFFFF;
+background: #ffffff;
 box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
