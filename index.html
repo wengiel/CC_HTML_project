@@ -21,9 +21,9 @@
         <div class="container">
             <div class="grid">
                 <div class="for-nav" id="home">
-                    <div>Logo</div>
                     <nav>
-                        <div>
+                        <div class="logo">Logo</div>
+                        <div class="nav-links">
                             <a href="#home">Home</a>
                             <a href="#about-me">About me</a>
                             <a href="#skills">Skills</a>
@@ -33,56 +33,126 @@
                     </nav>
                 </div>
                 <header>
-                    <h1>Welcome!</h1>
-                    <h2>My name is Mikołaj</h2>
-                    <div class="social-buttons"></div>
+                    <div>
+                        <h1>Welcome!</h1>
+                    </div>
+                    <div>
+                        <h2>My name is Mikołaj</h2>
+                    </div>
+                    
+                    <div class="social-buttons">
+                        <div>linkedin</div>
+                        <div>facebook</div>
+                        <div>github</div>
+                    </div>
                 </header>
 
                 <div class="gridbox happy-to-help">
                     <h3>I'm happy to help you with any problem</h3>
-                    <input id="button1" class="buttons" type="button" value="Contact me!" />
-                    <input id="button2" class="buttons" type="button" value="Check my CV!" />
+                    <div class="happy-help-buttons-container">
+                        <input class="buttons button-happy-to-help" type="button" value="Contact me!" />
+                        <input class="buttons button-happy-to-help" type="button" value="Check my CV!" />
+                    </div>
+                        
                 </div>
                 <div id="about-me" class="gridbox about-me">
                     <div class="greybox">
-                        <p>About me</p>
+                        <p class="section-head">About me</p>
                     </div>
                     <div class="floating-box">
-                        <ul>
-                            <li>Full Name: Mikołaj Kucia</li>
-                            <li>Age: 33 year</li>
-                            <li>Profile: trying my best</li>
-                            <li>Telephone: +48 500 779 333</li>
-                            <li>E-mail: mikolaj.kucia@gmail.com</li>
-                        </ul>
-                        <p>Kilka słów o mnie, żeby paragraf nie był wypełniony zupełnie miałkim lorem ipsum ;)</p>
+                        <div>
+                            
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Full Name: <span>Mikołaj Kucia</span></li>
+                                <li>Age: <span>33 year</span></li>
+                                <li>Profile: <span>newbie</span></li>
+                                <li>Telephone: <span>+48 500 779 333</span></li>
+                                <li>E-mail: <span>mikolaj.kucia@gmail.com</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>Kilka słów o mnie, żeby paragraf nie był wypełniony zupełnie miałkim lorem ipsum ;)</p>
+                        </div>    
                     </div>
                 </div>
                 <div id="skills" class="gridbox skills">
                     <div class="greybox">
-                        <p>Skills</p>
+                        <p class="section-head">Skills</p>
                     </div>
-                    <div class="floating-box"></div>
+                    <div class="floating-box">
+                        <div>
+                            x
+                            <p>UX/UI</p>
+                            <p>Figma</p>
+                        </div>
+                        <div>figma
+                            <p>Front End</p>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                        <div>figma
+                            <p>Back End</p>
+                            <p>PHP, Node.js</p>
+                        </div>
+                    </div>
                 </div>
                 <div id="portfolio" class="gridbox portfolio">
-                    <p>Portfolio</p>
+                    <div class="portfolio">
+                        <p class="section-head">Portfolio</p>
+                    </div>    
+                    <div class="photos">
+                        <div id="portfolio-pic1">
+                        </div>
+                        <div id="portfolio-pic2"></div>
+                        <div id="portfolio-pic3"></div>
+                        <div id="portfolio-pic4"></div>
+                        <div id="portfolio-pic5"></div>
+                    </div>
                 </div>
+                <div class="contact-alternative">
+                    <div class="contact-alternative-header">
+                        <p class="section-head">Contact us (alternative)</p>
+                    </div>
+                    <div class="contact-alternative-content">
+                        <div class="contact-alternative-contact-box">
+                            <div class="orange-box">
+                                <div>
+                                    <div>
+                                        <div>picture</div>
+                                        <div>Please describe your question. Send me a message and I will answer you as soon as possible!</div>
+                                    </div>
+                                    <div>
+                                        <div>social buttons</div>
+                                        <div>Designer</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white-box">
+                                <div class="form">
+                                    <p>Let's start!</p>
+                                    <input type="text" placeholder="Name" class="inputform">
+                                    <input type="text" placeholder="Your e-mail address" class="inputform">
+                                    <input type="text" placeholder="Topic" class="inputform">
+                                    <textarea placeholder="Message" class="inputform textarea"></textarea>
+                                    <div class="container-for-button-send">
+                                        <input type="submit" value="Send" class="buttons">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--
                 <div id="contact" class="gridbox contact">
                     <p>Contact us</p>
                     <div class="white-contact-box">
                         <div class="orange-box"></div>
                     </div>
-                </div>
+                </div>-->
             </div>
 
-            <div class="contact-alternative">
-                <div class="contact-alternative-header">
-                    <p>Contact us (alternative)</p>
-                </div>
-                <div class="contact-alternative-content">
-                    <div class="contact-alternative-contact-box">content</div>
-                </div>
-            </div>
+            
 
             <footer>
                 <p>Copyright Mikołaj Kucia 2020</p>

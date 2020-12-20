@@ -12,21 +12,39 @@ body {
     border: 2px red solid;
 }
 
-.for-nav {
+/*.for-nav {
     grid-row: 1/1;
     height: 85px;
     background-color: #ffffff;
     border: 2px blue solid;
-}
+}*/
 
 nav {
+    rid-row: 1/1;
     position: fixed;
-    width: 1293px;
-    height: 35.95px;
-    left: 98px;
-    top: 48px;
+    width: 1440px;
+    height: 85px;
     text-align: end;
     background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #515151;
+
+
+}
+
+.logo {
+    margin: 10px;
+}
+.nav-links {
+    margin: 10px;
 }
 
 header {
@@ -36,11 +54,20 @@ header {
     background-image: url(./website_pictures/header-pic.PNG);
     background-size: cover;
     border: 2px blue solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
 }
 
 h1 {
     text-align: center;
+    margin: 40px;
     color: #ffc53d;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
 }
 h2 {
     text-align: center;
@@ -52,16 +79,18 @@ h3 {
 
 .gridbox.happy-to-help {
     grid-row: 3/3;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-#button1 {
-    position: relative;
-    left: 33%;
+.happy-help-buttons-container {
+    display: flex;
+    justify-content: center;
 }
-
-#button2 {
-    position: relative;
-    left: 33%;
+.buttons.button-happy-to-help {
+    margin: 20px 20px;
 }
 
 .gridbox.about-me {
@@ -77,29 +106,39 @@ h3 {
 }
 
 .gridbox.about-me > .floating-box {
-    position: absolute;
     width: 1241px;
     height: 280px;
-    left: 100px;
-    top: 974px;
+    margin-left: 0%;
+    margin-top: 75px; /* dlaczego nie działą procentowo jak dam 17%?*/
     background-color: #ffffff;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .gridbox.skills > .floating-box {
-    position: absolute;
+    /*position: absolute; 
+    left: 100px;
+    top: 1461px; */
     width: 1239px;
     height: 280px;
-    left: 100px;
-    top: 1461px;
+    margin-left: 20%;
+    margin-top: 75px;
     background: #ffffff;
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skills.floating-box > p {
+    text-align: center;
 }
 
 .gridbox.skills {
     grid-row: 5/5;
     /* width: 1440px; */
     border: 2px blue solid;
+    display: flex;
 }
 
 .greybox {
@@ -110,10 +149,32 @@ h3 {
     z-index: -1;
 }
 
+.gridbox.skills > .greybox {
+    width: 980px;
+    height: 400px;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+
 .gridbox.portfolio {
     grid-row: 6/6;
     border: 2px blue solid;
 }
+
+.portfolio {
+    text-align: center;
+}
+
+.photos {
+    width: 1440px;
+    background-color: #ff9a3d
+}
+
+#portfolio-pic1 {
+    background-image: url(./website_pictures/portfolio/01.PNG);
+    background-size: cover;
+}
+
 
 .gridbox.contact {
     grid-row: 7/7;
@@ -133,15 +194,28 @@ h3 {
 }
 
 .orange-box {
-    position: absolute;
-    display: inline-block;
     width: 509px;
     height: 621px;
     background-color: #ff9a3d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
+.white-box {
+
+}
+
+.container-for-button-send {
+    width: 639px;
+    display: flex;
+    justify-content: flex-end;
+}
+.container-for-button-send > .buttons {
+    margin-right: 0px;
+} /* dlaczego powyższe nie działa?*/
+
 .gridbox.contact > p {
-    /* position: absolute; */
     left: 152px;
     font-family: Ubuntu;
     font-style: normal;
@@ -193,6 +267,7 @@ footer > p {
     background-color: #fafaff;
     width: 639px;
     height: 56px;
+    margin: 10px 10px;
     border-color: #fafaff;
     border-radius: 20px;
 }
@@ -201,6 +276,18 @@ footer > p {
 }
 .inputform:focus {
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.section-head {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    color: #222222;
+
+
 }
 
 .container {
@@ -227,7 +314,7 @@ footer > p {
     display: flex;
     justify-content: center;
     height: 750px;
-    align-items: center;
+    align-items: start;
 }
 
 .contact-alternative-contact-box {
@@ -235,6 +322,15 @@ footer > p {
     height: 621px;
     background-color: #ffffff;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+}
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 /* css z figmy*/
@@ -290,3 +386,24 @@ top: 1461px;
 
 background: #ffffff;
 box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
+
+
+/* Welcome! */
+
+position: absolute;
+width: 507px;
+height: 118px;
+left: 500px;
+top: 172px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 100px;
+line-height: 117px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #FFC53D;
+
