@@ -3,12 +3,12 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.grid {
-    width: 100%;
-    /* position: absolute; */
+.container {
+    width: 100vw;
     display: grid;
-    grid-template-columns: 1440px;
+    grid-template-columns: 100%;
     grid-template-rows: 85px 585px 220px 430px 430px 759px 785px 85px;
+    /* grid-template-rows: 1fr 3fr */
     border: 2px red solid;
 }
 
@@ -20,9 +20,9 @@ body {
 }*/
 
 nav {
-    rid-row: 1/1;
+    grid-row: 1/1;
     position: fixed;
-    width: 1440px;
+    width: 100vw;
     height: 85px;
     text-align: end;
     background-color: #ffffff;
@@ -49,7 +49,6 @@ nav {
 
 header {
     grid-row: 2/2;
-    /* width: 1440px; */
     height: 585px;
     background-image: url(./website_pictures/header-pic.PNG);
     background-size: cover;
@@ -58,6 +57,9 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
+}
+.social-buttons {
+    text-align: center;
 }
 
 h1 {
