@@ -4,7 +4,7 @@ body {
 }
 
 .grid {
-    width: 1440px;
+    width: 100%;
     /* position: absolute; */
     display: grid;
     grid-template-columns: 1440px;
