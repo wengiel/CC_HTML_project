@@ -1,411 +1,341 @@
+:root {
+
+}
+
+html {
+    
+}
+
 body {
     background-color: #ffffff;
     font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #515151;
+    background-color: #ffffff;
 }
 
-.container {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 85px 585px 220px 430px 430px 759px 785px 85px;
-    /* grid-template-rows: 1fr 3fr */
-    border: 2px red solid;
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/*.for-nav {
-    grid-row: 1/1;
-    height: 85px;
-    background-color: #ffffff;
-    border: 2px blue solid;
-}*/
+/* navigation */
 
-nav {
-    grid-row: 1/1;
-    position: fixed;
-    width: 100vw;
-    height: 85px;
-    text-align: end;
-    background-color: #ffffff;
+.navbar {
+    width: 80vw;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-family: Raleway;
-    font-style: normal;
+}
+
+.nav {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.nav > a {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+a {
     font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 0.02em;
+    font-size: 1rem;
     color: #515151;
-
-
+    text-decoration: none;
 }
 
-.logo {
-    margin: 10px;
-}
-.nav-links {
-    margin: 10px;
+a:hover {
+    color: #ffc53d;
+    cursor: pointer;
 }
 
-header {
-    grid-row: 2/2;
-    height: 585px;
-    background-image: url(./website_pictures/header-pic.PNG);
-    background-size: cover;
-    border: 2px blue solid;
+/*section home*/
+
+
+.section-home {
+    width: 80vw;
+    height: 500px; /* to musi być jakoś zmienione na wartość relatywną, a nie sztywną*/
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-content: center;
-}
-.social-buttons {
-    text-align: center;
+    align-items: center;
+    background-image: url(./website_pictures/header-pic.PNG);
+    background-size: cover;
+    background-position: center;
 }
 
 h1 {
     text-align: center;
-    margin: 40px;
-    color: #ffc53d;
-    font-family: Raleway;
+    font-size: 7rem;
     font-style: normal;
     font-weight: bold;
-    font-size: 100px;
+    color: #ffc53d;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
-h2 {
+
+h2  {
     text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+}
+
+.social-icons {
+    width: 20vw;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-evenly;   /*dlaczego ikony nie chcą mi się wyrównać? */
+}
+
+.social-icons > img {
+    margin-left: 20px; /*dlaczego nie działą margin?*/
+}
+
+
+/*section help-info*/
+
+.section-help-info {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 h3 {
+    font-style: bold;
+    font-size: 1.4rem;
+}
+
+.section-help-info > h3 {
+    width: 80vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
-.gridbox.happy-to-help {
-    grid-row: 3/3;
-    margin-bottom: 20px;
+.help-info-buttons {
+    width: 80vw;
     display: flex;
     justify-content: center;
-    flex-direction: column;
 }
 
-.happy-help-buttons-container {
+/*section about me*/
+
+.section-about-me {
+    width: 80vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-image: linear-gradient(90deg, #fafaff 66%, #ffffff 34%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-about-me > h3 {
+    margin: 1rem 2rem 0 3rem;
+}
+
+.floating-box {
+    width: 60vw;
+    padding: 2rem;
+    margin: 1rem 0 2rem 3rem;
+    background-color: #ffffff;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+}
+
+.personal-pic {
+    border-radius: 50%;
+}
+
+.personal-info {
+    width: 15vw; /*jak pomniejszam okno przegladarki to mi adres mailowy wjeżdża na lorem ipsum - co z tym zrobić?*/
+    font-weight: bold;
+    line-height: 1.5rem;
+    font-size: 
+}
+
+.personal-info span {
+    color: #FFC53D;
+}
+
+.div-line {
+    height: 90%;
+    margin: 0.5rem 1rem;
+    border: 3px dashed #FFC53D;    
+}
+
+.personal-description {
+    width: 30vw;
+    line-height: 1.5rem;
+}
+
+/* section skills */
+
+.section-skills {
+    width: 80vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-image: linear-gradient(90deg, #ffffff 34%, #fafaff 66%);
     display: flex;
     justify-content: center;
 }
-.buttons.button-happy-to-help {
-    margin: 20px 20px;
-}
 
-.gridbox.about-me {
-    grid-row: 4/4;
-    border: 2px blue solid;
-}
-
-.floating.box {
-    width: 1241px;
-    height: 280px;
-    background-color: #ffffff;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
-}
-
-.gridbox.about-me > .floating-box {
-    width: 1241px;
-    height: 280px;
-    margin-left: 0%;
-    margin-top: 75px; /* dlaczego nie działą procentowo jak dam 17%?*/
-    background-color: #ffffff;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+.section-skills > .floating-box {
     display: flex;
-    justify-content: space-evenly;
-}
-
-.gridbox.skills > .floating-box {
-    /*position: absolute; 
-    left: 100px;
-    top: 1461px; */
-    width: 1239px;
-    height: 280px;
-    margin-left: 20%;
-    margin-top: 75px;
-    background: #ffffff;
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.skills.floating-box > p {
-    text-align: center;
-}
-
-.gridbox.skills {
-    grid-row: 5/5;
-    /* width: 1440px; */
-    border: 2px blue solid;
-    display: flex;
-}
-
-.greybox {
-    position: absolute;
-    width: 980px;
-    height: 400px;
-    background-color: #fafaff;
-    z-index: -1;
-}
-
-.gridbox.skills > .greybox {
-    width: 980px;
-    height: 400px;
-    margin-left: 25%;
-    margin-top: 30px;
-}
-
-.gridbox.portfolio {
-    grid-row: 6/6;
-    border: 2px blue solid;
-}
-
-.portfolio {
-    text-align: center;
-}
-
-.photos {
-    width: 1440px;
-    background-color: #ff9a3d
-}
-
-#portfolio-pic1 {
-    background-image: url(./website_pictures/portfolio/01.PNG);
-    background-size: cover;
-}
-
-
-.gridbox.contact {
-    grid-row: 7/7;
-    background-color: #fafaff;
-    border: 2px blue solid;
-}
-
-.white-contact-box {
-    /* position: relative; */
-    /* display: inline-block; */
-    /* left: 100px; */
-    /* top: 10%; */
-    width: 1241px;
-    height: 621px;
-    background-color: #ffffff;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
-}
-
-.orange-box {
-    width: 509px;
-    height: 621px;
-    background-color: #ff9a3d;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
 }
 
-.white-box {
-
-}
-
-.container-for-button-send {
-    width: 639px;
+.skills {
     display: flex;
-    justify-content: flex-end;
-}
-.container-for-button-send > .buttons {
-    margin-right: 0px;
-} /* dlaczego powyższe nie działa?*/
-
-.gridbox.contact > p {
-    left: 152px;
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 37px;
-    letter-spacing: 0.02em;
+    flex-direction: column;
+    justify-content: center; /* dlaczego środkowa ikona mi się stretchuje na całą szerokość diva? Bo z kolei jak nie zrobię flexa, to środkowa ikona nie była wyśrodkowana w relacji do tekstu poniżej*/
 }
 
-footer {
-    width: 1440px;
-    background-color: #ffffff;
-    grid-row: 8/8;
+.skills > img {
+    margin-bottom: 3rem;
 }
 
-footer > p {
+.skills > p {
     text-align: center;
 }
 
-/* poniżej elementy nieblokowe strony*/
-
-.buttons {
-    color: #ffffff;
-    background-color: #ffc53d;
-    background-image: linear-gradient(90deg, #ff9a3d, #ffc53d);
-    border-color: transparent;
-    border-radius: 15px;
-    width: 200px;
-    height: 50px;
-    padding: 15px 35px;
-    margin: 0px 0px;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    mix-blend-mode: normal;
-}
-.buttons.small {
-    width: 100px;
-}
-.buttons:hover {
-    color: #ffc53d;
-    background: #ffffff;
-    border-color: #ffc53d;
-}
-
-.inputform {
-    color: #a0a0a0;
-    background-color: #fafaff;
-    width: 639px;
-    height: 56px;
-    margin: 10px 10px;
-    border-color: #fafaff;
-    border-radius: 20px;
-}
-.inputform.textarea {
-    height: 180px;
-}
-.inputform:focus {
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.section-head {
-    font-family: Raleway;
-    font-style: normal;
+.mini-header {
     font-weight: bold;
-    font-size: 32px;
-    line-height: 38px;
-    letter-spacing: 0.02em;
-    color: #222222;
+    font-size: 1.2rem;
+    color: #FFC53D;
+}
 
+.skills-standard-text {
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+/*section portfolio*/
+
+.section-portfolio > h3 {
+    width: 80vw;
+    text-align: center;
+}
+
+.portfolio-pics-container {
+    display: grid;
 
 }
 
-.container {
-    display: block;
-    width: 1440px;
-    margin: 0 auto;
-}
+/* section contact us */
 
-.contact-alternative {
+.section-contact {
+    width: 80vw;
     background-color: #fafaff;
-    border: 2px blue solid;
-}
-
-.contact-alternative-header > p {
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 37px;
-    letter-spacing: 0.02em;
-}
-
-.contact-alternative-content {
     display: flex;
-    justify-content: center;
-    height: 750px;
-    align-items: start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.contact-alternative-contact-box {
-    width: 1241px;
-    height: 621px;
-    background-color: #ffffff;
+.section-contact > h3 {
+    width: 90%;
+    margin: 2rem 2rem;
+    align-self: flex-start; /* do wyrównania napis contact us*/
+}
+
+.contact-box {
+    width: 90%;
+    margin: 1rem 2rem;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
     display: flex;
+    justify-content: space-between; 
 }
+
+.orange-box {
+    width: 48%;
+    background-color: #ff9a3d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .img-container {
+        margin: 2rem 2rem;
+    }
+
+    .p-container {
+        margin: 2rem 2rem;
+    }
+
+.white-box { 
+    width: 52%;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+} /* obiekt do wyrzucenia */
 
 
 
 .form {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
+    align-content: center;
 }
 
-/* css z figmy*/
+.container-for-button-send {
+    display: flex;
+    justify-content: flex-end;
+}
 
-/* I am happy to help you with any problem! */
+/* section footer */
 
-position: absolute;
-width: 714px;
-height: 43px;
-left: 363px;
-top: 718px;
+footer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
-font-family: Raleway;
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-line-height: 42px;
-/* identical to box height */
-text-align: center;
-letter-spacing: 0.02em;
+/* buttons */
 
-color: #222222;
+.buttons {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #ffc53d;
+    background-image: linear-gradient(90deg, #ff9a3d, #ffc53d);
+    border-color: transparent;
+    border-radius: 15px;
+    padding: 1rem 3rem;
+    margin: 1rem 1rem;
+    mix-blend-mode: normal;
+}
 
-/* Rectangle 7 */
+.buttons:hover {
+    color: #ffc53d;
+    background: #ffffff;
+    border-color: #ffc53d;
+    cursor: pointer;
+}
 
-position: absolute;
-width: 1241px;
-height: 280px;
-left: 100px;
-top: 974px;
+/* input forms */
 
-background: #ffffff;
-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
-
-/* Rectangle 7 */
-
-position: absolute;
-width: 1241px;
-height: 621px;
-left: 100px;
-top: 2765px;
-
-background: #ffffff;
-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
-
-/* Rectangle 7.1 */
-
-position: absolute;
-width: 1239px;
-height: 280px;
-left: 100px;
-top: 1461px;
-
-background: #ffffff;
-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
-
-
-/* Welcome! */
-
-position: absolute;
-width: 507px;
-height: 118px;
-left: 500px;
-top: 172px;
-
-font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 100px;
-line-height: 117px;
-/* identical to box height */
-text-align: center;
-letter-spacing: 0.02em;
-
-color: #FFC53D;
-
+.inputform {
+    color: #a0a0a0;
+    background-color: #fafaff;
+    width: 80%;
+    height: 56px;
+    margin: 10px 10px;
+    border-color: #fafaff;
+    border-radius: 20px;
+}
+    
+.inputform.textarea {
+    height: 180px;
+}
+    
+.inputform:focus {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

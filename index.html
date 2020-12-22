@@ -1,196 +1,156 @@
 <!DOCTYPE html>
 <html lang="pl">
     <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>CodersCamp | Projekt 1 - HTML i CSS - Mikołaj Kucia</title>
+        <title>CodersCamp | Projekt 1 - HTML i CSS - Mikolaj Kucia</title>
         <meta
             name="description"
             content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!"
         />
-
         <link href="./style.css" type="text/css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700&family=Ubuntu:ital,wght@0,300;1,400&display=swap"
-            rel="stylesheet"
-        />
-    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=5a-XsfMZJ_p-yaWn_8n_NtR9eD1tUScVE3GBFCs5xy1-hCAD9uxWGd9Q4-em2xQSnCzty7qIrn-iLgPrDy3GtJiJCfK7Iw5vTYIqBdt5XV2mpJ-mz9nKuBe5vEbStF23hE5cMXRAJWhZBZ5MOxjkNw" charset="UTF-8"></script></head>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700&family=Ubuntu:ital,wght@0,300;1,400&display=swap"
+            rel="stylesheet">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=5a-XsfMZJ_p-yaWn_8n_NtR9eD1tUScVE3GBFCs5xy1-hCAD9uxWGd9Q4-em2xQSnCzty7qIrn-iLgPrDy3GtJiJCfK7Iw5vTYIqBdt5XV2mpJ-mz9nKuBe5vEbStF23hE5cMXRAJWhZBZ5MOxjkNw" charset="UTF-8"></script>
+    </head>
     <body>
-        <div class="container">
-            <div class="grid">
-                <div class="for-nav" id="home">
-                    <nav>
-                        <div class="logo">Logo</div>
-                        <div class="nav-links">
-                            <a href="#home">Home</a>
-                            <a href="#about-me">About me</a>
-                            <a href="#skills">Skills</a>
-                            <a href="#portfolio">Portfolio</a>
-                            <a href="#contact">Contact</a>
-                        </div>
-                    </nav>
+        <div class="flex-container">
+            <section class="navbar">
+                    <div class="logo">
+                        <img src="./website_pictures/logo.PNG" alt="company's logo"/>
+                    </div>
+                    <div class="nav">
+                        <a href="#home">Home</a>
+                        <a href="#about-me">About me</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+            </section>
+            <section id="home" class="section-home">
+                <h1>Welcome!</h1>
+                <h2>My name is Mikołaj</h2>
+                <div class="social-icons"> <!--poniższe linki specjalnie odsyłają do głównych stron social media, jedynie, aby zademostrować działanie-->
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./website_pictures/social_media/facebook.png" alt="facebook logo" width="30px"/>
+                        </a>
+                        <a href="https://github.com/" target="_blank">
+                            <img src="./website_pictures/social_media/github.png" alt="github logo" width="30px"/>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <img src="./website_pictures/social_media/linkedin.png" alt="linkedin logo" width="30px"/>
+                        </a>    
+                        <a href="https://twitter.com/home" target="_blank">    
+                            <img src="./website_pictures/social_media/twitter.png" alt="twitter logo" width="30px"/>
+                        </a>
                 </div>
-                <header>
-                    <div>
-                        <h1>Welcome!</h1>
-                    </div>
-                    <div>
-                        <h2>My name is Mikołaj</h2>
-                    </div>
-                    <div class="social-buttons">
-                        <div>linkedin</div>
-                        <div>facebook</div>
-                        <div>github</div>
-                    </div>
-                </header>
-
-                <div class="gridbox happy-to-help">
-                    <h3>I'm happy to help you with any problem</h3>
-                    <div class="happy-help-buttons-container">
-                        <input class="buttons button-happy-to-help" type="button" value="Contact me!" />
-                        <input class="buttons button-happy-to-help" type="button" value="Check my CV!" />
-                    </div>
-                        
+            </section>
+            <section id="help-info" class="section-help-info">
+                <h3>I'm happy to help you with any problem</h3>
+                <div class="help-info-buttons">
+                    <input class="buttons button-happy-to-help" type="button" value="Contact me!" />
+                    <input class="buttons button-happy-to-help" type="button" value="Check my CV!" />
                 </div>
-                <div id="about-me" class="gridbox about-me">
-                    <div class="greybox">
-                        <p class="section-head">About me</p>
+            </section>
+            <section id="about-me" class="section-about-me">
+                <h3>About me</h3>
+                <div class="floating-box">
+                    <img class="personal-pic" src="./website_pictures/profile-pic.jpg" alt="profile picture of Mikołaj"/>
+                    <div class="personal-info">
+                        <ul>
+                            <li>Full Name: <span>Mikołaj Kucia</span></li>
+                            <li>Age: <span>33 years old</span></li>
+                            <li>Profile: <span>newbie</span></li>
+                            <li>Telephone: <span>+48 500 779 333</span></li>
+                            <li>E-mail: <span>mikolaj.kucia@gmail.com</span></li>
+                        </ul>
                     </div>
-                    <div class="floating-box">
+                    <div class="div-line"></div>
+                    <div class="personal-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="section-skills">
+                <h3>Skills</h3>
+                <div class="floating-box">
+                    <div class="skills">
+                        <img src="./website_pictures/skills/UX.png" alt="icon symbolizing UX/UI"/>
+                        <p class="mini-header">UX/UI</p>
+                        <p class="skills-standard-text">Figma</p>
+                    </div>
+                    <div class="skills">
+                        <img src="./website_pictures/skills/frontend.png" alt="icon symbolizing frontend"/>
+                        <p class="mini-header">Front End</p>
+                        <p class="skills-standard-text">HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="skills">
+                        <img src="./website_pictures/skills/backend.png" alt="icon symbolizing backend"/>
+                        <p class="mini-header">Back End</p>
+                        <p class="skills-standard-text">PHP, Node.js</p>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio" class="section-portfolio">
+                <h3>Portfolio</h3>
+                <div class="portfolio-pics-container">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </section>
+            <section id="contact" class="section-contact">
+                <h3>Contact Us</h3>
+                <div class="contact-box">
+                    <div class="orange-box">
                         <div>
-                            
-                        </div>
-                        <div>
-                            <ul>
-                                <li>Full Name: <span>Mikołaj Kucia</span></li>
-                                <li>Age: <span>33 year</span></li>
-                                <li>Profile: <span>newbie</span></li>
-                                <li>Telephone: <span>+48 500 779 333</span></li>
-                                <li>E-mail: <span>mikolaj.kucia@gmail.com</span></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p>Kilka słów o mnie, żeby paragraf nie był wypełniony zupełnie miałkim lorem ipsum ;)</p>
-                        </div>    
-                    </div>
-                </div>
-                <div id="skills" class="gridbox skills">
-                    <div class="greybox">
-                        <p class="section-head">Skills</p>
-                    </div>
-                    <div class="floating-box">
-                        <div>
-                            x
-                            <p>UX/UI</p>
-                            <p>Figma</p>
-                        </div>
-                        <div>figma
-                            <p>Front End</p>
-                            <p>HTML, CSS, JavaScript</p>
-                        </div>
-                        <div>figma
-                            <p>Back End</p>
-                            <p>PHP, Node.js</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="portfolio" class="gridbox portfolio">
-                    <div class="portfolio">
-                        <p class="section-head">Portfolio</p>
-                    </div>    
-                    <div class="photos">
-                        <div id="portfolio-pic1">
-                        </div>
-                        <div id="portfolio-pic2"></div>
-                        <div id="portfolio-pic3"></div>
-                        <div id="portfolio-pic4"></div>
-                        <div id="portfolio-pic5"></div>
-                    </div>
-                </div>
-                <div class="contact-alternative">
-                    <div class="contact-alternative-header">
-                        <p class="section-head">Contact us (alternative)</p>
-                    </div>
-                    <div class="contact-alternative-content">
-                        <div class="contact-alternative-contact-box">
-                            <div class="orange-box">
-                                <div>
-                                    <div>
-                                        <div>picture</div>
-                                        <div>Please describe your question. Send me a message and I will answer you as soon as possible!</div>
-                                    </div>
-                                    <div>
-                                        <div>social buttons</div>
-                                        <div>Designer</div>
-                                    </div>
-                                </div>
+                            <div class="img-container">
+                                <img src="./website_pictures/envelope1.png" alt="envelope pictogram"/>
+                            </div>    
+                            <div class="p-container">
+                                <p>Please describe your question. Send me a message and I will answer you as soon as possible!</p>
                             </div>
-                            <div class="white-box">
-                                <div class="form">
-                                    <p>Let's start!</p>
-                                    <input type="text" placeholder="Name" class="inputform">
-                                    <input type="text" placeholder="Your e-mail address" class="inputform">
-                                    <input type="text" placeholder="Topic" class="inputform">
-                                    <textarea placeholder="Message" class="inputform textarea"></textarea>
-                                    <div class="container-for-button-send">
-                                        <input type="submit" value="Send" class="buttons">
-                                    </div>
-                                </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="social-icons"> <!--poniższe linki specjalnie odsyłają do głównych stron social media, jedynie, aby zademostrować działanie-->
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <img src="./website_pictures/social_media/facebook.png" alt="facebook logo" width="30px"/>
+                                    </a>
+                                    <a href="https://github.com/" target="_blank">
+                                        <img src="./website_pictures/social_media/github.png" alt="github logo" width="30px"/>
+                                    </a>
+                                    <a href="https://www.linkedin.com/" target="_blank">
+                                        <img src="./website_pictures/social_media/linkedin.png" alt="linkedin logo" width="30px"/>
+                                    </a>    
+                                    <a href="https://twitter.com/home" target="_blank">    
+                                        <img src="./website_pictures/social_media/twitter.png" alt="twitter logo" width="30px"/>
+                                    </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--
-                <div id="contact" class="gridbox contact">
-                    <p>Contact us</p>
-                    <div class="white-contact-box">
-                        <div class="orange-box"></div>
-                    </div>
-                </div>-->
-            </div>
-            <footer>
-                <p>Copyright Mikołaj K 2020</p>
-            </footer>
-
-        </div>
-    </body>
-</html>
-
-
-
-            <!--
-            </div>
-            <div id="skills" class="skills">
-                <p>Skills</p>
-                <div class="floating-box"></div>
-                <div class="grey-background"></div>
-            </div>
-
-            <div id="portfolio" class="gridbox portfolio">
-                <p>Portfolio</p>
-                <div>
-                    <input type="button" value="View" class="buttons small">
-                </div>
-                <div>
-                    <input type="button" value="View" class="buttons small">
-                </div>
-                <div id="contact" class="gridbox contact">
-                <p>Contact Us!</p>
-                <div>
-                    <p>Please describe your question. Send me a message and I will ansewr you as soon as possible!</p>
-                    <div>
+                    <div class="form">
                         <p>Let's start!</p>
                         <input type="text" placeholder="Name" class="inputform">
                         <input type="text" placeholder="Your e-mail address" class="inputform">
                         <input type="text" placeholder="Topic" class="inputform">
                         <textarea placeholder="Message" class="inputform textarea"></textarea>
-                        <input type="submit" value="Send" class="buttons">
+                        <div class="container-for-button-send">
+                            <input type="submit" value="Send" class="buttons">
+                        </div>
                     </div>
-
                 </div>
-            </div>
-            
+            </section>
+            <footer>
+                copyright alright, do not copy or I'll find you and I'll kill you!
+            </footer>
+
         </div>
-            -->
+    </body>
+</html>
