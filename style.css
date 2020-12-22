@@ -3,7 +3,7 @@
 }
 
 html {
-    
+    scroll-behavior: smooth;
 }
 
 body {
@@ -179,12 +179,16 @@ h3 {
     margin-bottom: 2rem;
     background-image: linear-gradient(90deg, #ffffff 34%, #fafaff 66%);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .section-skills > .floating-box {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .skills {
@@ -192,7 +196,14 @@ h3 {
     padding-left: 6rem;
     padding-right: 6rem;
     flex-direction: column;
-    justify-content: center; /* dlaczego środkowa ikona mi się stretchuje na całą szerokość diva? Bo z kolei jak nie zrobię flexa, to środkowa ikona nie była wyśrodkowana w relacji do tekstu poniżej*/
+    justify-content: center;
+    align-items: center; /* dlaczego środkowa ikona mi się stretchuje na całą szerokość diva? Bo z kolei jak nie zrobię flexa, to środkowa ikona nie była wyśrodkowana w relacji do tekstu poniżej*/
+}
+
+.section-skills > h3 {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 10rem 0 3rem;
 }
 
 .skills:nth-last-of-type(2) {
@@ -210,7 +221,7 @@ h3 {
 
 .mini-header {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     color: #FFC53D;
@@ -218,7 +229,7 @@ h3 {
 
 .skills-standard-text {
     font-weight: normal;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
@@ -237,9 +248,7 @@ h3 {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "project01 project01 project01 project02 project02 project03 project03 project03"
-    "project04 project04 project05 project05 project05 project05 project05 project05"
-    ;
-
+    "project04 project04 project05 project05 project05 project05 project05 project05";
 }
 
 .portfolio-project {
@@ -355,8 +364,8 @@ h4 {
 }
 
 .section-contact > h3 {
-    width: 90%;
-    margin: 2rem 2rem;
+    width: 100%;
+    margin: 2rem 4rem;
     align-self: flex-start; /* do wyrównania napis contact us*/
 }
 
@@ -365,43 +374,62 @@ h4 {
     margin: 1rem 2rem;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
     display: flex;
-    justify-content: space-between; 
+    justify-content: center;
+    align-items: stretch;
 }
 
 .orange-box {
     width: 48%;
+    color: #FFFFFF;
+    font-size: 1rem;
+    padding: 1rem 1rem;
     background-color: #ff9a3d;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-    .img-container {
-        margin: 2rem 2rem;
-    }
+.img-container {
+    margin: 2rem 2rem;
+}
 
-    .p-container {
-        margin: 2rem 2rem;
-    }
+.orange-box .social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.p-container {
+    width: 60%;
+    margin: 2rem 2rem;
+}
+.p-container > p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
 
 .white-box { 
     width: 52%;
-    background-color: cadetblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    background-color: #FFFFFF;
+    padding: 1rem 1rem;
 } /* obiekt do wyrzucenia */
 
-
-
 .form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
 }
 
+.form > p {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
 .container-for-button-send {
+    padding: 2rem 4rem;
     display: flex;
     justify-content: flex-end;
 }
@@ -439,15 +467,16 @@ footer {
 .inputform {
     color: #a0a0a0;
     background-color: #fafaff;
+    font-size: 1rem;
     width: 80%;
-    height: 56px;
-    margin: 10px 10px;
+    height: 2rem;
+    margin: 1rem 1rem;
     border-color: #fafaff;
     border-radius: 20px;
 }
     
 .inputform.textarea {
-    height: 180px;
+    height: 8rem;
 }
     
 .inputform:focus {
