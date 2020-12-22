@@ -19,7 +19,6 @@ body {
 
 /* navigation */
 
-
 @media (max-width: 768px) {
     .navbar {
         display:flex;
@@ -86,7 +85,6 @@ a:hover {
     justify-content: flex-start;
     align-items: center;
     background-image: url(./website_pictures/header-pic.PNG);
-    z-index: -1;
     background-size: cover;
     background-position: center;
 }
