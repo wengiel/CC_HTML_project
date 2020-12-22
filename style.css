@@ -7,7 +7,6 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     color: #515151;
-    background-color: #ffffff;
 }
 
 .flex-container {
@@ -17,26 +16,9 @@ body {
     align-items: center;
 }
 
-/* navigation */
 
-@media (max-width: 768px) {
-    .navbar {
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }   
-    .nav {
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .a {
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-}
+
+/* navigation */
 
 .navbar {
     width: 80vw;
@@ -66,16 +48,26 @@ a:hover {
     cursor: pointer;
 }
 
-/*section home*/
-
 @media (max-width: 768px) {
-    h1 {
-        font-size: 5px;
+    .navbar {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }   
+    .nav {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
-    .social-icons > img {
-        margin: 1rem 1rem;
+    .a {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 }
+
+/*section home*/
 
 .section-home {
     width: 80vw;
@@ -125,6 +117,17 @@ h2  {
     margin-left: 20px;
 }
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .section-home {
+        width: 100vw;
+    }
+    .social-icons img {
+        margin: 1rem 1rem;
+    }
+}
 
 /*section help-info*/
 
@@ -136,7 +139,7 @@ h2  {
 }
 
 h3 {
-    font-style: bold;
+    font-weight: bold;
     font-size: 1.4rem;
 }
 
@@ -151,6 +154,13 @@ h3 {
     width: 80vw;
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .help-info-buttons {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }
 
 /*section about me*/
@@ -184,7 +194,7 @@ h3 {
 }
 
 .personal-info {
-    width: 15vw; /*jak pomniejszam okno przegladarki to mi adres mailowy wjeżdża na lorem ipsum - co z tym zrobić?*/
+    width: 15vw;
     font-weight: bold;
     line-height: 1.5rem;
     border-right: 3px dotted  #FFC53D;
@@ -226,7 +236,7 @@ h3 {
     padding-right: 6rem;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* dlaczego środkowa ikona mi się stretchuje na całą szerokość diva? Bo z kolei jak nie zrobię flexa, to środkowa ikona nie była wyśrodkowana w relacji do tekstu poniżej*/
+    align-items: center; 
 }
 
 .section-skills > h3 {
@@ -381,6 +391,21 @@ h4 {
     opacity: 1;
 }
 
+@media (max-width: 768px) {
+.portfolio-pics-container {
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "project01"
+    "project02"
+    "project03"
+    "project04"
+    "project05"
+    }
+}
+
+
 /* section contact us */
 
 .section-contact {
@@ -395,7 +420,7 @@ h4 {
 .section-contact > h3 {
     width: 100%;
     margin: 2rem 4rem;
-    align-self: flex-start; /* do wyrównania napis contact us*/
+    align-self: flex-start;
 }
 
 .contact-box {
@@ -441,7 +466,7 @@ h4 {
     width: 52%;
     background-color: #FFFFFF;
     padding: 1rem 1rem;
-} /* obiekt do wyrzucenia */
+}
 
 .form {
     width: 100%;
@@ -462,6 +487,25 @@ h4 {
     display: flex;
     justify-content: flex-end;
 }
+
+@media (max-width: 768px) {
+    ..section-contact {
+        width: 100vw;
+    }
+
+    .contact-box {
+        width: 100vw;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .orange-box {
+        width: 100vw;
+    }
+    .white-box {
+        width: 100vw;
+    }
+}
+
 
 /* section footer */
 
@@ -509,5 +553,5 @@ footer {
 }
     
 .inputform:focus {
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.15);
 }
