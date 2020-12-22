@@ -158,22 +158,17 @@ h3 {
     width: 15vw; /*jak pomniejszam okno przegladarki to mi adres mailowy wjeżdża na lorem ipsum - co z tym zrobić?*/
     font-weight: bold;
     line-height: 1.5rem;
-    font-size: 
+    border-right: 3px dotted  #FFC53D;
 }
 
 .personal-info span {
     color: #FFC53D;
 }
 
-.div-line {
-    height: 90%;
-    margin: 0.5rem 1rem;
-    border: 3px dashed #FFC53D;    
-}
-
 .personal-description {
     width: 30vw;
     line-height: 1.5rem;
+    margin: 2rem 2rem;
 }
 
 /* section skills */
@@ -194,8 +189,15 @@ h3 {
 
 .skills {
     display: flex;
+    padding-left: 6rem;
+    padding-right: 6rem;
     flex-direction: column;
     justify-content: center; /* dlaczego środkowa ikona mi się stretchuje na całą szerokość diva? Bo z kolei jak nie zrobię flexa, to środkowa ikona nie była wyśrodkowana w relacji do tekstu poniżej*/
+}
+
+.skills:nth-last-of-type(2) {
+    border-left: 3px dotted  #FFC53D;
+    border-right: 3px dotted  #FFC53D;
 }
 
 .skills > img {
@@ -209,12 +211,16 @@ h3 {
 .mini-header {
     font-weight: bold;
     font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     color: #FFC53D;
 }
 
 .skills-standard-text {
     font-weight: normal;
     font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 /*section portfolio*/
@@ -225,8 +231,116 @@ h3 {
 }
 
 .portfolio-pics-container {
+    width: 80vw;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "project01 project01 project01 project02 project02 project03 project03 project03"
+    "project04 project04 project05 project05 project05 project05 project05 project05"
+    ;
 
+}
+
+.portfolio-project {
+    height: 346px;
+    padding: 1rem 1rem;
+}
+
+.portfolio-project:nth-of-type(1) {
+    background-image: url(./website_pictures/portfolio/01.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: project01;
+}
+
+.portfolio-project:nth-of-type(2) {
+    background-image: url(./website_pictures/portfolio/02.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: project02;
+}
+
+.portfolio-project:nth-of-type(3) {
+    background-image: url(./website_pictures/portfolio/03.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: project03;
+}
+
+.portfolio-project:nth-of-type(4) {
+    background-image: url(./website_pictures/portfolio/04.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: project04;
+}
+
+.portfolio-project:nth-of-type(5) {
+    background-image: url(./website_pictures/portfolio/05.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: project05;
+}
+
+.portfolio-project:nth-of-type(1):hover {
+    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%),
+    url(./website_pictures/portfolio/01.PNG);
+    cursor: pointer;
+}
+
+.portfolio-project:nth-of-type(2):hover {
+    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%),
+    url(./website_pictures/portfolio/02.PNG);
+    cursor: pointer;
+}
+
+.portfolio-project:nth-of-type(3):hover {
+    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%),
+    url(./website_pictures/portfolio/03.PNG);
+    cursor: pointer;
+}
+
+.portfolio-project:nth-of-type(4):hover {
+    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%),
+    url(./website_pictures/portfolio/04.PNG);
+    cursor: pointer;
+}
+
+.portfolio-project:nth-of-type(5):hover {
+    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%),
+    url(./website_pictures/portfolio/05.PNG);
+    cursor: pointer;
+}
+
+.project-details {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h4 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.project-details > p {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.view-button.buttons {
+    margin-left: 0;
+}
+
+.project-details:hover {
+    opacity: 1;
 }
 
 /* section contact us */
