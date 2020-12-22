@@ -273,6 +273,21 @@ h3 {
     margin-bottom: 0.5rem;
 }
 
+@media (max-width: 768px) {
+    .section-skills {
+        width: 100vw;
+    }
+    .section-skills > .floating-box {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .skills {
+        width: 100vw;
+        margin-bottom: 1rem;
+    }
+}
+
+
 /*section portfolio*/
 
 .section-portfolio > h3 {
@@ -498,9 +513,15 @@ h4 {
         flex-direction: column;
         justify-content: flex-start;
     }
+
     .orange-box {
         width: 100vw;
     }
+
+    .orange-box .social-icons {
+        justify-content: flex-start
+    }
+
     .white-box {
         width: 100vw;
     }
